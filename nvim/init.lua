@@ -1,0 +1,21 @@
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+-- requires npm
+require "user.lsp"
+require "user.cmp"
+require "user.nvim-tree"
+require "user.whichkey"
+-- requires ripgrep
+require "user.telescope"
+require "user.bufferline"
+require "user.lualine"
+require "user.indentline"
+require "user.alpha"
+require "user.treesitter"
+require "user.autocommand"
+require "user.impatient"
+require "user.comment"
+-- requires cmp
+require "user.autopairs"
