@@ -68,4 +68,3 @@ indent_blankline.setup({
 	--   "IndentBlanklineIndent3",
 	-- },
 })
-

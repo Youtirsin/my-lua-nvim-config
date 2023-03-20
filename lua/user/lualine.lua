@@ -91,4 +91,3 @@ lualine.setup({
 	tabline = {},
 	extensions = {},
 })
-

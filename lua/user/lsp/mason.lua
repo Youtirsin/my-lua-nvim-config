@@ -1,5 +1,4 @@
 local servers = {
-	-- "clangd",
 	"lua_ls",
 	-- "cssls",
 	-- "html",
@@ -7,7 +6,6 @@ local servers = {
 	"pyright",
 	-- "bashls",
 	"jsonls",
-	"rust_analyzer",
 	-- "yamlls",
 }
 
@@ -25,7 +23,6 @@ local settings = {
 }
 
 require("mason").setup(settings)
-
 require("mason-lspconfig").setup({
 	ensure_installed = servers,
 	automatic_installation = true,
@@ -53,4 +50,3 @@ for _, server in pairs(servers) do
 
 	lspconfig[server].setup(opts)
 end
-
