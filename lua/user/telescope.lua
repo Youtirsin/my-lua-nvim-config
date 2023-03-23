@@ -5,6 +5,7 @@ end
 
 local actions = require "telescope.actions"
 
+-- neovim-from-scratch, this is good, -- youtirsin
 telescope.setup {
   defaults = {
 

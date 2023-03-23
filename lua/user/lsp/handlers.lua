@@ -5,6 +5,7 @@ if not status_cmp_ok then
 	return
 end
 
+-- nvim-from-scratch, I dont know where these from, but cool -- youtirsin
 M.capabilities = vim.lsp.protocol.make_client_capabilities()
 M.capabilities.textDocument.completion.completionItem.snippetSupport = true
 M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
@@ -69,23 +70,6 @@ local function lsp_keymaps(bufnr)
 	keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 	keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 	keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-end
-
-M.on_attach = function(client, bufnr)
-	if client.name == "tsserver" then
-		client.server_capabilities.documentFormattingProvider = false
-	end
-
-	if client.name == "sumneko_lua" then
-		client.server_capabilities.documentFormattingProvider = false
-	end
-
-	lsp_keymaps(bufnr)
-	local status_ok, illuminate = pcall(require, "illuminate")
-	if not status_ok then
-		return
-	end
-	illuminate.on_attach(client)
 end
 
 return M

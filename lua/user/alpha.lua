@@ -3,6 +3,7 @@ if not status_ok then
 	return
 end
 
+-- lunarvim
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
 [[ ██╗   ██╗ ██████╗ ██╗   ██╗████████╗██╗██████╗ ███████╗██╗███╗   ██╗ ]],
@@ -28,7 +29,7 @@ local function footer()
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "chrisatmachine.com"
+	return "youtirsin@qq.com"
 end
 
 dashboard.section.footer.val = footer()

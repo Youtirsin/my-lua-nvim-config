@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-lua"] = {
-    loaded = true,
-    path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
-    url = "https://github.com/hrsh7th/cmp-nvim-lua"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/cmp-path",
@@ -189,11 +184,6 @@ _G.packer_plugins = {
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-ts-context-commentstring"] = {
-    loaded = true,
-    path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
-    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -209,10 +199,10 @@ _G.packer_plugins = {
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["project.nvim"] = {
+  ["symbols-outline.nvim"] = {
     loaded = true,
-    path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
+    path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -228,11 +218,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
-  },
-  ["vim-bbye"] = {
-    loaded = true,
-    path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/vim-bbye",
-    url = "https://github.com/moll/vim-bbye"
   },
   ["vim-illuminate"] = {
     loaded = true,
