@@ -4,6 +4,5 @@ if not status_ok then
 end
 
 bufferline.setup {
-
 }
 
