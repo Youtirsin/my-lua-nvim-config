@@ -42,6 +42,10 @@ local mappings = {
       "<cmd>BufferLineMoveNext<cr>",
       "Move right",
     },
+    s = {
+      "<cmd>BufferLineSortByDirectory<cr>",
+      "Sort buffers",
+    },
   },
 
   p = {
