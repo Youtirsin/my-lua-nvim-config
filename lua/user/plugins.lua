@@ -52,12 +52,12 @@ return packer.startup(function(use)
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use { "goolord/alpha-nvim", requires = "kyazdani42/nvim-web-devicons" }
-
 	use "folke/which-key.nvim"
 
 	-- Colorschemes
   use "folke/tokyonight.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
+  use 'navarasu/onedark.nvim'
 
 	-- Snippets
   use "L3MON4D3/LuaSnip" --nvim-cmp snippet engine
