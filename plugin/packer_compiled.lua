@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/youtirsin/.local/share/nvim/site/pack/packer/start/null-ls.nvim",

@@ -3,6 +3,6 @@ if not status_ok then
   return
 end
 
-require("symbols-outline").setup({
+outline.setup({
   auto_close = true,
 })
