@@ -48,12 +48,14 @@ return packer.startup(function(use)
   use { "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" }
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
   use "nvim-lualine/lualine.nvim"
-  use "akinsho/toggleterm.nvim"
-  use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use { "goolord/alpha-nvim", requires = "kyazdani42/nvim-web-devicons" }
 	use "folke/which-key.nvim"
   use { "Shatur/neovim-session-manager", requires = "nvim-lua/plenary.nvim" }
+  use 'simrat39/symbols-outline.nvim'
+	use "lewis6991/gitsigns.nvim"
+	use "nvim-telescope/telescope.nvim" -- requires ripgrep, apt install ripgrep
+	use "nvim-treesitter/nvim-treesitter"
 
 	-- Colorschemes
   use "folke/tokyonight.nvim"
@@ -78,17 +80,6 @@ return packer.startup(function(use)
 	use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "RRethy/vim-illuminate"
 
-  -- outline
-  use 'simrat39/symbols-outline.nvim'
-
-	-- Telescope
-	use "nvim-telescope/telescope.nvim" -- requires ripgrep, apt install ripgrep
-
-	-- Treesitter
-	use "nvim-treesitter/nvim-treesitter"
-
-	-- Git
-	use "lewis6991/gitsigns.nvim"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
