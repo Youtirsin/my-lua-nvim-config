@@ -28,8 +28,8 @@ local mappings = {
   ["o"] = { "<cmd>SymbolsOutline<cr>", "Outline" },
 
   -- hop
-  ["w"] = { "<cmd>HopWord<cr>", "HopWord" },
-  ["j"] = { "<cmd>HopLineStart<cr>", "HopLine" },
+  -- ["w"] = { "<cmd>HopWord<cr>", "HopWord" },
+  -- ["j"] = { "<cmd>HopLineStart<cr>", "HopLine" },
 
   b = {
     name = "Buffer",
