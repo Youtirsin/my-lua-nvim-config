@@ -16,16 +16,20 @@ local opts = {
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["w"] = { "<cmd>w!<CR>", "Save" },
+  ["W"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>bdelete!<CR>", "Close Buffer" },
-  ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  ["H"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["o"] = { "<cmd>SymbolsOutline<cr>", "Outline" },
+
+  -- hop
+  ["w"] = { "<cmd>HopWord<cr>", "HopWord" },
+  ["j"] = { "<cmd>HopLineStart<cr>", "HopLine" },
 
   b = {
     name = "Buffer",
