@@ -6,6 +6,7 @@ local plugins = {
   "bufferline",
   "Comment",
   "gitsigns",
+  "lualine",
 }
 
 -- calls basic setup
@@ -21,10 +22,4 @@ require("session_manager").setup({
 require("symbols-outline").setup({
   auto_close = true,
 })
-
-require("lualine").setup {
-  options = {
-    theme = 'horizon',
-  }
-}
 
