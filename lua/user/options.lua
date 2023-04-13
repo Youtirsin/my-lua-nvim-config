@@ -32,8 +32,8 @@ local options = {
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = true,                             -- display lines as one long line
   linebreak = true,                        -- companion to wrap, don't split words
-  -- scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
-  -- sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
+  scrolloff = 4,                           -- minimal number of screen lines to keep above and below the cursor
+  sidescrolloff = 4,                       -- minimal number of screen columns either side of cursor if wrap is `false`
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
 }
