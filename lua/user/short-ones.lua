@@ -1,7 +1,11 @@
 local colorscheme = "onedark"
 
-vim.cmd("colorscheme " ..colorscheme)
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  return
+end
 
+-- calls basic setup
 local plugins = {
   "bufferline",
   "Comment",
@@ -9,9 +13,13 @@ local plugins = {
   "lualine",
 }
 
--- calls basic setup
 for _, p in pairs(plugins) do
-  require(p).setup {}
+  local ok, plugin = pcall(require, p)
+  if not ok then
+    return
+  end
+
+  plugin.setup {}
 end
 
 require("session_manager").setup({
