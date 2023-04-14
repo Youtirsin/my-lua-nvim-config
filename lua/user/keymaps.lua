@@ -41,3 +41,5 @@ keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- use <ctrl-s> to save
+keymap("n", "<C-s>", ":w!<CR>", opts)
