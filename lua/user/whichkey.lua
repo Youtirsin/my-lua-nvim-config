@@ -61,7 +61,6 @@ local mappings = {
 
   g = {
     name = "Git",
-    g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
@@ -124,13 +123,6 @@ local mappings = {
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
-  },
-
-  t = {
-    name = "Terminal",
-    f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-    h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-    v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 }
 
