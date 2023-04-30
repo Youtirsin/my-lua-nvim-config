@@ -68,7 +68,7 @@ return packer.startup(function(use)
 	use "saadparwaiz1/cmp_luasnip" -- snippet completions, used by nvim-cmp to control cmp source
   use "rafamadriz/friendly-snippets" -- VS Code-like snippets, used by LuaSnip
 
-	-- Cmp 
+	-- Cmp
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions, nvim-cmp source
   use "hrsh7th/cmp-path" -- path completions, nvim-cmp source
