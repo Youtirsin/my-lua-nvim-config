@@ -20,7 +20,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-    vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+    vim.keymap.set('n', '<space>ls', vim.lsp.buf.signature_help, opts)
     vim.keymap.set('n', '<space>lA', vim.lsp.buf.add_workspace_folder, opts)
     vim.keymap.set('n', '<space>lR', vim.lsp.buf.remove_workspace_folder, opts)
     vim.keymap.set('n', '<space>lL', function()
@@ -35,3 +35,15 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
   end,
 })
+
+-- open the signature help window when inserting
+vim.cmd([[
+  augroup lsp
+    autocmd!
+    autocmd CursorHoldI *.* lua vim.lsp.buf.signature_help()
+  augroup END
+]])
+vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
+  vim.lsp.handlers.signature_help,
+  { focusable = false }
+)
