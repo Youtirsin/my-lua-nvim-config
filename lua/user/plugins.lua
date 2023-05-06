@@ -48,7 +48,6 @@ return packer.startup(function(use)
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
   use "nvim-lualine/lualine.nvim"
   use "lukas-reineke/indent-blankline.nvim"
-  use { "goolord/alpha-nvim", requires = "kyazdani42/nvim-web-devicons" }
   use "folke/which-key.nvim"
   use { "Shatur/neovim-session-manager", requires = "nvim-lua/plenary.nvim" }
   use "simrat39/symbols-outline.nvim"
@@ -76,6 +75,7 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip"
   use "saadparwaiz1/cmp_luasnip"
+  use "rafamadriz/friendly-snippets"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -36,3 +36,10 @@ configs.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+-- folding
+local opt = vim.opt
+opt.foldlevel = 20
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldenable = false
