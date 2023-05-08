@@ -1,4 +1,3 @@
-
 require("onedark").setup {
   style = 'darker'
 }
@@ -23,11 +22,6 @@ require("symbols-outline").setup({
   auto_close = true,
 })
 
-require("Comment").setup({
-  toggler = {
-    ---Line-comment toggle keymap
-    line = '<leader>/',
-    ---Block-comment toggle keymap
-    block = '<leader>/',
-  },
-})
+require("Comment").setup {
+
+}
