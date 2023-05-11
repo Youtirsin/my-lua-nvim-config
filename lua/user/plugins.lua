@@ -78,9 +78,6 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
 
-  -- coc
-  use {'neoclide/coc.nvim', branch = 'release'}
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
