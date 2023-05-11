@@ -13,7 +13,7 @@ local opts = {
 }
 
 local mappings = {
-  ["c"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
+  ["x"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["q"] = { "<cmd>q<CR>", "Quit" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },

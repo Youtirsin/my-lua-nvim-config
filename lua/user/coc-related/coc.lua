@@ -108,7 +108,7 @@ keyset("n", "<leader>lc", "<Plug>(coc-codeaction-selected)", opts)
 -- Remap keys for applying codeActions to the current buffer
 -- keyset("n", "<leader>ac", "<Plug>(coc-codeaction)", opts)
 -- Apply the most preferred quickfix action on the current line.
-keyset("n", "<leader>qf", "<Plug>(coc-fix-current)", opts)
+keyset("n", "<leader>lq", "<Plug>(coc-fix-current)", opts)
 
 -- Remap keys for apply refactor code actions.
 -- keyset("n", "<leader>re", "<Plug>(coc-codeaction-refactor)", { silent = true })
@@ -167,11 +167,11 @@ vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}"
 -- Mappings for CoCList
 -- code actions and coc stuff
 ---@diagnostic disable-next-line: redefined-local
--- local opts = {silent = true, nowait = true}
+local opts = {silent = true, nowait = true}
 -- Show all diagnostics
--- keyset("n", "<space>a", ":<C-u>CocList diagnostics<cr>", opts)
+keyset("n", "<space>cd", ":<C-u>CocList diagnostics<cr>", opts)
 -- Manage extensions
--- keyset("n", "<space>e", ":<C-u>CocList extensions<cr>", opts)
+keyset("n", "<space>e", ":<C-u>CocList extensions<cr>", opts)
 -- Show commands
 -- keyset("n", "<space>c", ":<C-u>CocList commands<cr>", opts)
 -- Find symbol of current document
