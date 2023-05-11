@@ -1,6 +1,5 @@
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
--- require "user.lsp-related"
-require "user.coc-related"
+require "user.coc"
 require "user.others"
