@@ -1,16 +1,12 @@
-require("onedark").setup {
-  style = 'darker'
-}
-
-require('onedark').load()
+vim.cmd([[colorscheme catppuccin-macchiato]])
 
 require("bufferline").setup {}
 require("gitsigns").setup {}
 
-
 require("lualine").setup {
   options = {
-    theme = "horizon",
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
   }
 }
 
@@ -23,5 +19,4 @@ require("symbols-outline").setup({
 })
 
 require("Comment").setup {
-
 }

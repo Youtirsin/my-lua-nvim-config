@@ -60,6 +60,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use "navarasu/onedark.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- lsp
   use "neovim/nvim-lspconfig"
