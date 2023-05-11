@@ -13,7 +13,6 @@ local opts = {
 }
 
 local mappings = {
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["c"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["q"] = { "<cmd>q<CR>", "Quit" },
@@ -69,19 +68,6 @@ local mappings = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
     },
-  },
-
-  l = {
-    name = "lsp",
-    A = { "<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>", "Add Workspace Folder" },
-    R = { "<cmd>lua vim.lsp.buf.remove_workspace_folder()<cr>", "Remove Workspace Folder" },
-    L = { "<cmd>lua vim.lsp.buf.list_workspace_folders()<cr>", "List Workspace Folders" },
-    c = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-    D = { "<cmd>lua vim.lsp.buf.type_definition()<cr>", "Type Definition" },
-    f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
-    q = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Quickfix" },
-    r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-    s = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help" },
   },
 
   s = {

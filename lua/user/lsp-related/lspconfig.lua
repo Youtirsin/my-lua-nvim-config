@@ -43,6 +43,7 @@ vim.cmd([[
     autocmd CursorHoldI *.* lua vim.lsp.buf.signature_help()
   augroup END
 ]])
+
 vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
   vim.lsp.handlers.signature_help,
   { focusable = false }

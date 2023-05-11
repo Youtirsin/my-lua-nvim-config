@@ -1,8 +1,0 @@
-require "user.plugin-config.autopairs"
-require "user.plugin-config.hop"
-require "user.plugin-config.indentline"
-require "user.plugin-config.nvim-tree"
-require "user.plugin-config.telescope"
-require "user.plugin-config.treesitter"
-require "user.plugin-config.whichkey"
-require "user.plugin-config.others"

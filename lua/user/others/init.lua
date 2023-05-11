@@ -1,0 +1,7 @@
+require "user.others.hop"
+require "user.others.indentline"
+require "user.others.nvim-tree"
+require "user.others.telescope"
+require "user.others.treesitter"
+require "user.others.others"
+require "user.others.whichkey"
