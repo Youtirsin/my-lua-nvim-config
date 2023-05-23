@@ -56,7 +56,6 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim" -- requires ripgrep, apt install ripgrep
   use "nvim-treesitter/nvim-treesitter"
   use "phaazon/hop.nvim"
-  use "windwp/nvim-autopairs"
 
   -- Colorschemes
   use "navarasu/onedark.nvim"
