@@ -14,9 +14,5 @@ require("session_manager").setup({
   autoload_mode = require('session_manager.config').AutoloadMode.CurrentDir
 })
 
-require("symbols-outline").setup({
-  auto_close = true,
-})
-
 require("Comment").setup {
 }
