@@ -17,7 +17,7 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["q"] = { "<cmd>q<CR>", "Quit" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-  ["o"] = { "<cmd>SymbolsOutline<cr>", "Outline" },
+  ["o"] = { "<cmd>CocOutline<cr>", "Outline" },
 
   b = {
     name = "Buffer",
