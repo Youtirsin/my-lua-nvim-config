@@ -8,5 +8,8 @@ nvim_tree.setup {
     enable = true,
     show_on_dirs = true
   },
+  update_focused_file = {
+    enable = true,
+  },
 }
 
