@@ -41,9 +41,7 @@ packer.init({
 -- Install your plugins here
 return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/plenary.nvim"  -- Useful lua functions used by lots of plugins
   use "numToStr/Comment.nvim"
-  use "kyazdani42/nvim-web-devicons"
   use { "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" }
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
   use "https://github.com/moll/vim-bbye" -- close buffer elegantly
@@ -55,6 +53,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim" -- requires ripgrep, apt install ripgrep
   use "nvim-treesitter/nvim-treesitter"
   use "phaazon/hop.nvim"
+  use { "folke/noice.nvim", requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify"} }
 
   -- Colorschemes
   use "navarasu/onedark.nvim"
