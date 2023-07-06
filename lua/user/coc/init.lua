@@ -1,1 +1,1 @@
-require "user.coc.coc"
+require "user.coc.mapping"

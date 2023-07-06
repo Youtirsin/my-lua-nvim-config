@@ -1,4 +1,19 @@
 {
-  "snippets.ultisnips.pythonPrompt": false,
-  "clangd.path": "/usr/bin/clangd-15"
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true,
+  },
+  "diagnostic.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+  "signature.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+  "hover.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+  "clangd.path": "/usr/bin/clangd-15",
 }
