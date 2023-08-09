@@ -41,3 +41,6 @@ keymap("v", ">", ">gv", opts)
 
 -- use <ctrl-s> to save
 keymap("n", "<C-s>", ":w!<CR>", opts)
+
+-- copy to +
+keymap("v", "<Leader>y", "\"+y", opts)
